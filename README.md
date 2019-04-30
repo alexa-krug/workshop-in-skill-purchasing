@@ -1,3 +1,5 @@
+> Alexa KRUG에서 현재 한글화 작업을 진행중 입니다. 작업에 참여하실 분들은 파일 단위로 번역하실 issue를 먼저 작성하신 후에 작업하시고 PR을 보내주시면 됩니다. PR전에 반드시 실제 동작여부까지 테스트 해 봐 주시기 바랍니다. 궁금하신점은 [페이스북 Alexa 한국 사용자 모임](https://www.facebook.com/groups/kalexa)으로 문의 주세요.
+
 ## Workshop In Skill Purchasing
 
 This workshop covers building a sample skill which uses In-Skill Purchasing, specifically consumable products.
