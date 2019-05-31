@@ -17,49 +17,65 @@
 다음은 워크샵에서 만들 스킬의 사용자 상호작용 예시입니다. 일부 대화는 쉽게 읽을 수 있도록 축약하였습니다.
 
 :speech_balloon: User: "Alexa, open name the show"
+
 :speech_balloon: 사용자: "알렉사, name the show 열어줘."
 
 :loud_sound: Alexa: "Welcome to Name the Show, the game where you try to guess the show based on the actors in it. Are you ready to begin?"
+
 :loud_sound: 알렉사: "출연 배우로 드라마 이름을 추측하는 게임인 Name the Show 에 오신 것을 환영합니다. 시작할 준비되셨나요?"
 
 :speech_balloon: User: "Yes"
+
 :speech_balloon: 사용자: "네"
 
 :loud_sound: Alexa: "Your clue is Billy Bob Thornton. What show do you guess?"
+
 :loud_sound: 알렉사: "당신의 단서는 빌리 밥 손튼. 당신의 추측은?"
 
 :speech_balloon: User: "Man in the high castle"
+
 :speech_balloon: 사용자: "Man in the high castle"
 
 :loud_sound: Alexa: "That is incorrect. Please guess again. What show do you guess?"
+
 :loud_sound: 알렉사: "틀렸습니다. 다시 추측해 보세요. 당신의 추측은?"
 
 :speech_balloon: User: "Give me a hint"
+
 :speech_balloon: 사용자: "힌트 좀 줘"
 
 :loud_sound: Alexa: "You currently do not have any hints, would you like to learn more about the Five Hint Pack?"
+
 :loud_sound: 알렉사: "힌트를 가지고 있지 않군요, 다섯 힌트 팩에 대해서 알려드릴가요?"
 
 :speech_balloon: User: "Yes"
+
 :speech_balloon: 사용자: "네"
 
 :loud_sound: Alexa: "The Five Hint Pack is available for 99 cents. Would you like to buy it?"
+
 :loud_sound: 알렉사: "다섯 힌트 팩은 99 센트에 구입 가능합니다. 구입하시겠어요?"
 
 :speech_balloon: User: "Yes"
+
 :speech_balloon: 사용자: "네"
 
 :loud_sound: Alexa: "Great, you now own a five hint pack. Here's your clue: Billy Bob Thornton and Nina Arianda. Which show do you guess?"
+
 :loud_sound: 알렉사: "좋아요, 이제 다섯개의 힌트 팩을 가졌네요. 단서를 알려드리죠. 빌리 밥 손튼과 니나 아리안다. 당신의 추측은?"
 
 :speech_balloon: User: "Goliath"
+
 :speech_balloon: 사용자: "골리앗"
 
 :loud_sound: Alexa: "Correct, the show I was thinking of was Goliath. Would you like to play again?"
+
 :loud_sound: 알렉사: "정답, 내가 생각한 드라마는 골리앗이었어요. 더 해보시겠어요?"
 
 :speech_balloon: User: "No"
+
 :speech_balloon: 사용자: "아니요"
+
 (스킬을 종료합니다)
 
 ### 아키텍처
