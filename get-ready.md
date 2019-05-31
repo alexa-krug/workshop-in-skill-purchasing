@@ -1,73 +1,71 @@
-Here's what we recommend you do before the workshop gets started:
+워크숍을 시작하기 전에 다음을 확인해주세요.
 
-# Workshop Prerequisites
+# 워크숍 필수 구성 요소
 
-1. Amazon Developer Account
-1. AWS Account
-1. ASK CLI
+1. Amazon Developer 계정
+2. AWS 계정
+3. ASK CLI
 
-## Amazon Developer Account
+## Amazon Developer 계정
 
-1. Visit https://developer.amazon.com in your browser.
-1. Log in using an existing set of credentials or create a new one.
-1. Be sure to enter all the company information.
+1. 브라우저에서 [https://developer.amazon.com](https://developer.amazon.com/)을 방문해주세요.
+2. 기존 계정 또는 새로운 계정을 생성하여 로그인해주세요.
+3. 회사 정보는 모두 입력해주셔야 합니다.
 
-## Amazon Web Services (AWS) Account
+## Amazon Web Services (AWS) 계정
 
-1. Visit https://aws.amazon.com in your browser.
-1. Log in using an existing account, or create a new one.
-1. You will need a credit card and access to a phone in order to create a new account.
+1. 브라우저에서 [https://aws.amazon.com](https://aws.amazon.com/)을 방문해주세요.
+2. 기존 계정 또는 새로운 계정을 생성하여 로그인해주세요.
+3. 새로운 계정을 생성하기 위해서는 신용카드와 휴대폰이 필요합니다.
 
-> Note: although a credit card is required to open a new AWS account, the resources required by the workshop all fit into the AWS Free Tier.  If the Free Tier has expired for your account, you may be charged for the use of the resources needed by this workshop.
+> 참고 : 새로운 AWS 계정을 생성하기 위해서는 신용카드가 필요합니다. 워크숍에서 진행되는 실습은 모두 AWS Free Tier로 진행할 수 있습니다. 계정의 Free Tier가 만료된 경우 워크숍에서 진행되는 실습은 소량의 사용 요금이 청구될 수 있습니다.
 
 ## Alexa Skills Kit Command Line Interface (ASK CLI)
 
-The ASK CLI is required to complete this lab.  If you do not have it setup on your local machine already, follow these steps to get a development environment (AWS Cloud9) setup with the ASK CLI in just a few minutes.  You must have an AWS Account in order to do this.
+실습을 진행하려면 ASK CLI가 필요합니다. ASK CLI가 로컬 환경에 아직 설정되지 않았다면 다음 단계에 따라 ASK CLI를 개발 환경(AWS Cloud9)에 설정해주세요. 이 단계는 반드시 AWS 계정을 가지고 있어야 합니다.
 
-If you already have the ASK CLI working, skip to the next section.
+ASK CLI가 설정되어 있으신 분들은 다음 세션으로 넘어가 주세요.
 
-If you want to setup the ASK CLI on your local machine instead of using Cloud9, follow the directions [here](https://alexa.design/cli). 
+Cloud9 대신 로컬 환경에서 ASK CLI를 설정하시려면 [여기](https://alexa.design/cli)를 클릭해주세요. 
 
-1. Sign in to your AWS Account
-1. Navigate to [Cloud9](https://console.aws.amazon.com/cloud9/home)
-1. Create an environment and name it "ASK Workshop"
-1. Accept the defaults and click Next
-1. Review and click Create Environment
-1. Wait a few minutes while the environment is created.
-1. Once the environment is ready, enter the following command in the bash terminal that is created by default.  This command installs the ASK CLI.
+1. AWS 계정에 로그인하세요.
+2. [Cloud9](https://console.aws.amazon.com/cloud9/home)으로 이동하세요.
+3. Create environment를 클릭하고 "ASK Workshop"으로 이름을 설정합니다. 
+4. 기본 값을 적용하고 Next를 클릭합니다.
+5. Review를 확인 후 Create environment를 클릭합니다.
+6. 환경이 생성되는 동안 잠시 기다려주세요.
+7. 환경이 준비되면, 기본 생성된 bash 터미널에 다음 명령을 입력해주세요. 이 명령은 ASK CLI를 설치합니다.
 	```
 	npm install ask-cli -g
 	``` 
-1. Configure the ASK CLI by entering the command 
+8. 다음 명령을 입력하여 ASK CLI의 환경을 설정해주세요.
 	```
 	ask init --no-browser
 	```
-1. Press **ENTER** to use the default profile.  This will use the temporary AWS credentials managed by Cloud9.  Click [here](https://docs.aws.amazon.com/cloud9/latest/user-guide/auth-and-access-control.html#auth-and-access-control-temporary-managed-credentials) to learn more about Temporary Credentials.
-1. Click the link which is generated.  Click **Open** in the pop-up menu.  This will open a new tab in your browser.  You will need to sign in to your Amazon Developer account.
-1. Once you grant permissions, a code will appear in the browser. Copy this code.
-1. Switch back to the Cloud9 terminal.  Paste the code at the prompt.
-1. If you have more than one Vendor ID associated with your login, select the one you want to use.
-	> If your Vendor ID cannot be retrieved (error message is 'call list-vendors error' / 401 / 'You are not authorized to access this operation'), it typically means you haven't fully created your Developer Account.  Return to https://developer.amazon.com/alexa-skills-kit and finish providing the requested data.
-1. Now that the ASK CLI is installed and configured, there's one last step to get it to work with Cloud9 Temporary Credentials.  Enter the following command:
+9. 기본 프로필을 사용하시려면 **ENTER**를 눌러주세요. 이것은 Cloud9에서 관리하는 AWS 임시 보안 자격 증명을 사용합니다. 임시 보안 자격 증명에 대한 자세한 내용을 보시려면 [여기](https://docs.aws.amazon.com/cloud9/latest/user-guide/auth-and-access-control.html#auth-and-access-control-temporary-managed-credentials)를 클릭해주세요.
+10. 생성된 링크를 클릭하세요. 팝업 메뉴에서 **Open**을 클릭하면 브라우저에서 새 탭이 열립니다. 해당 탭에서 Amazon Developer 계정을 로그인해주세요.
+11. **Allow**를 클릭하면 브라우저에 코드가 나타납니다. 이 코드를 복사해주세요.
+12. Cloud9 터미널로 돌아와서 복사한 코드를 붙여 넣어주세요.
+13. 만약 연결된 벤더 ID가 2개 이상인 경우 사용할 벤더 ID를 선택해주세요.
+    > 벤더 ID를 조회할 수 없는 경우(error message is 'call list-vendors error' / 401 / 'You are not authorized to access this operation')는 일반적으로 개발자 계정이 완전히 생성되지 않았음을 의미합니다. https://developer.amazon.com/alexa-skills-kit으로 돌아가서 요청된 정보를 모두 작성해주세요.
+14. 이제 ASK CLI가 설치 및 설정이 완료되었으므로 Cloud9의 임시 보안 자격 증명과 함께 작동하도록 하는 마지막 단계가 남아있습니다. 다음 명령을 입력해주세요.
 	```
 	echo 'export ASK_DEPLOY_ROLE_PREFIX=Cloud9-' >> ~/.bashrc
 	```
-	This sets an environment variable which allows the ASK CLI to create IAM roles compatible with Cloud9 Temporary Credential restrictions.
-1. **IMPORTANT** For the new environment variable to be usable, close the current terminal session (enter `exit` or click the **x** on the terminal tab) and launch a new terminal session (click the **+** and then select **New Terminal**)
+	이것은 ASK CLI가 Cloud9의 임시 보안 자격 증명 제한과 호환되는 IAM 역할을 생성할 수 있도록 하는 환경 변수를 설정합니다.
+15. **IMPORTANT** 새 환경 변수를 사용하려면 현재 터미널 세션을 닫고(exit 입력 또는 터미널 탭의 x 클릭) 새로운 터미널 세션을 시작하세요.(+를 누른 후 New Terminal 선택)
 
-## Verify ASK-CLI Version
+## ASK-CLI 버전 확인
 
-From the terminal/command prompt issue this command:
-
+터미널 / 명령 프롬프트에서 다음 명령을 입력해주세요.
 ```
 ask --version
 ```
-
-You should see at least *1.4.5*.  If you don't, update your CLI by issuing this command:
+ask의 버전은 최소 1.4.5 이상이어야 합니다. 버전이 1.4.5보다 낮은 경우, 다음 명령을 실행하여 CLI를 업데이트해주세요.
 ```
 npm install ask-cli -g
 ```
 
-That's it!  Sit back, relax and wait for the workshop to get started!
+모든 준비가 완료되었습니다. 워크숍이 시작되기 전까지 잠시 기다려주세요.
 
-\###
+감사합니다.
