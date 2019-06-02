@@ -1,95 +1,97 @@
-# Next Steps
+# 다음 단계
 
-Congratulations on finishing the workshop!  Now that you know your way around In-Skill Purchasing, you are ready to take your skill to the next level.  Here are our suggested next steps:
+워크샵을 마친 것을 축하합니다! 이제 인스킬 구매(In-Skill Purchasing)를 통해서 당신의 스킬을 한 단계 업그레이드 할 준비가 됐습니다. 다음은 권장하는 다음 단계 입니다:
 
-* [Remove Workshop AWS Resources](#remove-workshop-aws-resources)
-* [Setup CLI in your preferred development environment](#Setup-CLI-in-your-preferred-development-environment)
-* [Add Premium Content and ISP’s to your skill](#Add-Premium-Content-and-ISPs-to-your-skill)
-* [Consider adding additional analytics within your skill](#Consider-adding-additional-analytics-within-your-skill)
-* [Conduct a Beta Test](#Conduct-a-Beta-Test)
-* [Certification](#Certification)
-* [Monitor your skill’s performance](#Monitor-your-skills-performance)
-* [Iterate and enhance your skill](#Iterate-and-enhance-your-skill)
-* [Join the Community](#Join-the-Community)
+* [워크샵에서 사용한 AWS 리소스 삭제하기](#워크샵에서-사용한-AWS-리소스-삭제하기)
+* [원하는 개발 환경에서 CLI 설치하기](#원하는-개발-환경에서-CLI-설치하기)
+* [프리미엄 컨텐츠와 ISP를 스킬에 추가하기](#프리미엄-컨텐츠와-ISP를-스킬에-추가하기)
+* [스킬에 부가적인 분석을 추가하는 것 고려하기](#스킬에-부가적인-분석을-추가하는-것-고려하기)
+* [베타 테스트 수행하기](#베타-테스트-수행하기)
+* [인증받기](#인증받기)
+* [스킬의 성과 모니터하기](#스킬의-성과-모니터하기)
+* [스킬을 반복하고 향상시키기](#스킬을-반복하고-향상시키기)
+* [커뮤니티에 참여하기](#커뮤니티에-참여하기)
 
-### Remove Workshop AWS Resources
+### 워크샵에서 사용한 AWS 리소스 삭제
 
-Although we recommend you keep the skill you created during this workshop around for reference, if you would like to instead remove some or all of the AWS resources created during this workshop, please follow these steps:
+본 워크샵에서 생성했던 내용을 참고할 수 있도록 유지하는 것을 추천하지만, 이 워크샵에서 생성한 리소스, 중 일부 또는 전부를 제거하려면 다음 단계를 따르십시오:
 
-> _Note: If you chose different names during the workshop, be sure to search for those resources instead of those named below._
+> _Note: 워크샵에서 다른 이름을 선택 했었다면 아래 명시된 이름 대신 해당 리소스를 검색하십시오._
 
 1. AWS Cloud9 Instance
-    1. Navigate to [Cloud9 in the AWS console](https://console.aws.amazon.com/cloud9)
-    1. Select the Cloud9 instance you created.
-    1. Choose *Delete Environment* from the menu.
+    1. [AWS 콘솔의 Cloud9](https://console.aws.amazon.com/cloud9)으로 이동하기
+    1. 생성했던 Cloud9 인스턴스를 선택하십시오.
+    1. 메뉴에서 *Delete Environment* 를 선택하기.
 1. Amazon DynamoDB Table
-    1. Navigate to [DynamoDB in the AWS console](https://console.aws.amazon.com/dynamodb/home?region=us-east-1#tables:)
-    1. Select the NameTheShow table from the list.
-    1. Click *Delete*.
+    1. [AWS 콘솔의 DynamoDB](https://console.aws.amazon.com/dynamodb/home?region=us-east-1#tables:)로 이동하기
+    1. 목록에서 NameTheShow 테이블 선택하기.
+    1. *Delete* 클릭.
 1. AWS Lambda Function
-    1. Navigate to [Lambda in the AWS console](https://console.aws.amazon.com/lambda)
-    1. Select the ask-name-the-show function from the list.
-    1. Click *Delete Function*.
+    1. [AWS 콘솔의 Lambda](https://console.aws.amazon.com/lambda)로 이동하기
+    1. 목록에서 ask-name-the-show 선택하기.
+    1. *Delete Function* 클릭.
 1. AWS IAM Role
-    1. Navigate to the [roles section in the IAM area in the AWS console](https://console.aws.amazon.com/iam/home#/roles)
-    1. Select the name-the-show role from the list.
-    1. Click *Delete Role*.
+    1. [AWS 콘솔의 IAM 영역에 있는 role 섹션](https://console.aws.amazon.com/iam/home#/roles)으로 이동하기
+    1. 목록에서 name-the-show 역할 선택하기.
+    1. *Delete Role* 클릭.
 1. AWS CloudWatch Logs
-    1. Navigate to [CloudWatch Logs in the AWS console](https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#logs:)
-    1. Select the ask-name-the-show log group.
-    1. Click *Delete*
+    1. [AWS 콘솔의 CloudWatch Logs](https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#logs:)로 이동하기
+    1. ask-name-the-show 로그 그룹 선택하기.
+    1. *Delete* 클릭.
 
-### Setup CLI in your preferred development environment
+### 원하는 개발 환경에서 CLI 설치하기
 
-In today's workshop, we used AWS Cloud9. You can continue to use Cloud9 for your skill development.  If you want to setup the ASK CLI on your local machine instead of using Cloud9, follow the directions [here](https://alexa.design/cli). 
+오늘 워크샵에서 우리는 AWS Cloud9을 사용합니다. 당신은 계속 기술 개발을 위해 Cloud9을 사용할 수 있습니다. 만약 Cloud9 대신 AWS CLI를 로컬 머신에 설치하기 원한다면 해당 문서를 참고하십시오 [문서](https://alexa.design/cli).
 
-### Add Premium Content and ISP’s to your skill
+### 프리미엄 컨텐츠와 ISP를 스킬에 추가하기
 
-Your existing skill should have a great free experience.  Once you've decided you want to add a premium experience, you will need to decide what form that premium content will take.  Along with that, you should select what type of In-Skill Product is best suited to that premium content -- consumables, subscriptions or one-time purchases.
+당신의 현재 스킬은 훌륭한 경험 입니다. 추가적인 프리미엄 경험을 얻기로 결정했다면 프리미엄 컨텐츠의 형식을 결정해야 할 것입니다. 이와 함께 프리미엄 컨텐츠에 가장 적합한 인스킬 제품(In-Skill Product) 유형을 선택해야 합니다. -- 소모품, 구독 또는 일회성 구매.
 
-Once you've planned this out, add the premium content to your skill.  Add the In-Skill products following the general outline from this workshop - create the ISP, integrate Upsells and Buys into your skill, and add supporting functionality like subscription management or inventory tracking.
+계획을 세우고 나면 스킬에 프리미엄 컨텐츠를 추가하십시오. 워크샵의 일반적인 개요에 따라 인스킬 제품에 추가하십시오. - ISP 생성, 연쇄 판매와 구매를 기술에 통합, 구독 관리 또는 재고 추적과 같은 지원 기능 추가.
 
-### Consider adding additional analytics within your skill
+### 스킬에 부가적인 분석을 추가하는 것 고려하기
 
-There is a rich set of metrics for how users interact with your skill available through the developer console.  In the developer console, click the **Analytics** link next to your skill to access the analytics.
+개발자 콘솔을 통해 사용할 수 있는 스킬과 상호 작용하는 방식에 대한 다양한 메트릭이 있습니다. 분석에 접근하기 위해서 개발자 콘솔에서 당신의 스킬 옆에있는 **Analytics** 링크를 클릭하십시오.
 
-Beyond these analytics, you should consider how users might interact with your skill and what data would be helpful in improving your skill.  For example, you might track how many customers use a hint on a particular question, or how many customers get a particular question wrong on the first try.  Exactly what you track will depend on your skill and it will likely evolve over time.  If you think the data might tell something that could improve your skill, track it. Review the data and if it's not helpful, stop.
+이러한 분석 이상으로 어떻게 유저들이 당신의 스킬과 상호작용을 할지, 어떤 데이터들이 스킬을 향상 시키는데 도움이 될지 고려해야 합니다.
+예를 들어서 당신은 얼마나 많은 고객들이 특정 질문에 대해서 힌트를 사용하는지, 또는 얼마나 많은 고객들이 특정 질문에 대해서 처음 시도에 잘못된 답변을 했는지 대해서 추적할 수 있습니다.
+당신이 추적하는것은 정확히 당신의 스킬에 달렸으며 시간이 지남에 따라 발전할 것 입니다. 만약 데이터가 당신의 스킬을 향상 시킬것 이라고 생각된다면 추적 하십시오. 데이터를 리뷰하고 도움이 되지 않으면 중지 하면 됩니다.
 
-### Conduct a Beta Test
+### 베타 테스트 수행하기
 
-Getting feedback from users is the best way to improve the user experience in your skill.  The skill beta testing tool can be used to test your Alexa skill in beta before releasing it to production. You can also use the skill beta testing tool to test changes to an existing skill, while still keeping the currently live version of the skill available for the general public. You can invite friends or family, your social network contacts, or other people for whom you have an email address to test your skill and provide feedback. Using skill beta testing can help increase your chances of skill success.
+사용자의 피드백을 얻는 것은 사용자 경험에 대한 스킬을 향상 시키는 최고의 방법입니다. 스킬 베타 테스팅 도구(skill beta testing tool)를 사용하면 제품에 배포하기 전에 당신의 알렉사 스킬을 테스트할 수 있습니다. 또한 공개 되있는 라이브 버전의 스킬을 변경할 때, 해당 버전을 사용 가능하게 유지 하면서 테스트할 수 있습니다. 당신은 친구 또는 가족을 초대할 수 있고, 소셜 네트워크 연락처 또는 다른 사람의 이메일을 통해서 스킬을 테스트하게 하고 피드백을 받을수 있습니다. 스킬 베타 테스팅 도구를 이용하면 성공적인 스킬의 기회를 향상시키는데 도움이 될 수 있습니다.
 
-Get more information on beta testing here: https://alexa.design/betatest
+베타 테스팅에 대한 더 많은 정보는 여기서 확인하십시오: https://alexa.design/betatest
 
-### Certification
+### 인증받기
 
-In today's workshop we configured the minimum required fields for an In-Skill Product to work in development.  The remaining fields for any In-Skill Products need to be updated prior to submitting your skill for certification.  It is at this time, that In-skill products are evaluated.
+오늘 워크샵에서 우리는 인스킬 제품(In-Skill Product)을 개발하기 위한 최소한의 필수적인 필드를 구성했습니다. 다른 인스킬 제품을 위해 필요한 나머지 필드들은 인증을 위해 제출되기 전에 먼저 업데이트 돼야 합니다. 현재 시점에서 인스킬 제품들은 평가 됐습니다.
 
-Prior to submitting your skill for certification, there are validation tests you can run which help to catch common certification failures.  These tests can be run from within the developer console or from the command line.  To run these tests using the CLI, enter this command from the project's root folder (that's the folder with the skill.json file):
+인증을 위해서 당신의 스킬을 제출하기 전에, 유효성 테스트를 통해서 일반적으로 인증에 실패하는 부분들을 검증하는데 도움을 받을 수 있습니다. 유효성 테스트는 개발자 콘솔 또는 커맨드 라인으로 실행 가능합니다. CLI로 테스트를 실행하기 위해서, 프로젝트의 루트 폴더에서 해당 커맨드를 실행하십시오 (skill.json 파일이 있는 폴더)
 ```
 ask validate
 ```
-In addition to passing these validation tests, make sure that your skill passes all of the [certification requirements for a custom skill](https://developer.amazon.com/docs/custom-skills/certification-requirements-for-custom-skills.html).  
+유효성 검사를 통과하는것 외에도, 당신의 스킬이 [커스텀 스킬을 위한 인증 요구사항](https://developer.amazon.com/docs/custom-skills/certification-requirements-for-custom-skills.html)에 통과하는지 확인하십시오.
 
-You should also review the [In-Skill Purchase Certification Guide](https://developer.amazon.com/docs/in-skill-purchase/isp-certification-guide.html) which is specific to skills which include In-Skill Products.
+또한 [인스킬 구매 인증 가이드](https://developer.amazon.com/docs/in-skill-purchase/isp-certification-guide.html)를 참고해서 어떤 부분이 인스킬 제품에 포함되는지 리뷰해야 합니다.
 
-For general tips on certification, check out https://alexa.design/certification.
+일반적인 인증에 대한 팁은 여기서 확인 하십시오: https://alexa.design/certification
 
-### Monitor your skill’s performance
+### 스킬의 성과 모니터하기
 
-As mentioned earlier, there is a rich set of metrics for how users interact with your skill available through the developer console.  In the developer console, click the **Analytics** link next to your skill to access the analytics.
+앞서 언급한것과 같이, 사용자가 개발자 콘솔을 통해 사용할 수 있는 기술과 상호작용하는 방식에 대한 다양한 메트릭이 있습니다. 분석에 접근하기 위해 개발자 콘솔에서 당신의 스킬 옆에있는 **Analytics** 링크를 클릭하십시오.
 
-A detailed description of the analytics available in the console can be found [here](https://developer.amazon.com/docs/devconsole/measure-skill-usage.html).  
+콘솔에서 사용 가능한 분석에 자세한 설명은 해당 문서를 참조하십시오 [문서](https://developer.amazon.com/docs/devconsole/measure-skill-usage.html).  
 
-Periodically review the metrics, and see how customers are using your skill.  See where customers are encountering problems, make adjustments, and keep improving your skill.
+정기적으로 메트릭을 리뷰하고 어떤 고객들이 당신의 스킬을 사용하는지 확인하십시오. 고객들이 어디서 문제를 겪고 있는지 확인하고, 계속 수정하고 발전시키십시오.
 
-### Iterate and enhance your skill
+### 스킬을 반복하고 향상시키기
 
-After your skill is published, the world will continue to turn.  To keep your skill fresh, look at your metrics, listen to your customer feedback and continue to enhance your skill.  It could be as simple as adding new questions, but you might consider adding additional categories, a leaderboard and more.
+스킬을 배포한 뒤에도 세상은 계속 변할것 입니다. 당신의 기술이 뒤쳐지지 않도록 메트릭을 확인하고, 스킬을 향상 시키기 위해 고객들의 피드백에 귀 기울이십시오. 그것은 새로운 질문을 추가하는 것 처럼 간단할 수 있지만, 추가적인 카테고리나 리더보드 등을 고려할 수 있습니다.
 
-### Join the Community
+### 커뮤니티에 참여하기
 
-[Amazon Developer Forums](https://forums.developer.amazon.com/spaces/165/index.html)
+[아마존 개발자 포럼](https://forums.developer.amazon.com/spaces/165/index.html)
 
 [Alexa Skills - User Voice](https://alexa.uservoice.com)
 
